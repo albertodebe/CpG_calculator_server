@@ -1,0 +1,13 @@
+### example of global analysis
+
+python3 my_client.py --file high_cpg.fasta --mode global --host 127.0.0.1 --port 9999
+
+
+
+### example of sliding window analysis
+
+python3 my_client.py --file high_cpg.fasta --mode sliding --window 200 --step 50 --chrom 17 --start 41196312 --end 41277500 --host 127.0.0.1 --port 9999
+
+
+
+It is assumed that the raw of fasta sequence has already been been aligned, so in order to retrieve genes or regulatory sequences that overlap with the high CpG island, the chromosome, the starting and the ending point of the whole sequence need to be specified.
